@@ -1,0 +1,129 @@
+====================================
+PIPELINE LOG
+FILE: 2025LHC495
+TIME: 2026-04-29 01:25:52.104486
+====================================
+
+
+--- PAGE 1 ---
+OCR_TEXT_LENGTH: 1314
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.8971
+ROUTE: DIGITAL
+TEXT_LENGTH: 1314
+------------------------------------
+
+--- PAGE 2 ---
+OCR_TEXT_LENGTH: 2132
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+TEXT_LENGTH: 2132
+------------------------------------
+
+--- PAGE 3 ---
+OCR_TEXT_LENGTH: 2172
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+TEXT_LENGTH: 2172
+------------------------------------
+
+--- PAGE 4 ---
+OCR_TEXT_LENGTH: 2128
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+TEXT_LENGTH: 2128
+------------------------------------
+
+--- PAGE 5 ---
+OCR_TEXT_LENGTH: 2743
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+TEXT_LENGTH: 2743
+------------------------------------
+
+--- PAGE 6 ---
+OCR_TEXT_LENGTH: 2152
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+TEXT_LENGTH: 2152
+------------------------------------
+
+--- PAGE 7 ---
+OCR_TEXT_LENGTH: 2439
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+TEXT_LENGTH: 2439
+------------------------------------
+
+--- PAGE 8 ---
+OCR_TEXT_LENGTH: 2228
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+TEXT_LENGTH: 2228
+------------------------------------
+
+--- PAGE 9 ---
+OCR_TEXT_LENGTH: 2384
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+TEXT_LENGTH: 2384
+------------------------------------
+
+--- PAGE 10 ---
+OCR_TEXT_LENGTH: 2856
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+TEXT_LENGTH: 2856
+------------------------------------
+
+--- PAGE 11 ---
+OCR_TEXT_LENGTH: 2375
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+TEXT_LENGTH: 2375
+------------------------------------
+
+--- PAGE 12 ---
+OCR_TEXT_LENGTH: 2666
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+TEXT_LENGTH: 2666
+------------------------------------
+
+--- PAGE 13 ---
+OCR_TEXT_LENGTH: 2715
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+TEXT_LENGTH: 2715
+------------------------------------
+
+--- PAGE 14 ---
+OCR_TEXT_LENGTH: 2312
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+TEXT_LENGTH: 2312
+------------------------------------
+
+--- PAGE 15 ---
+OCR_TEXT_LENGTH: 325
+PAGE_TYPE: SCANNED
+CONFIDENCE: 0.8000
+ROUTE: SCANNED
+TEXT_LENGTH: 325
+------------------------------------
+
+====================================
+PIPELINE COMPLETED

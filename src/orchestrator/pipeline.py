@@ -1,19 +1,46 @@
+import os
+from datetime import datetime
+
 from src.agents.triage_agent import classify_page
 from src.ocr.tesseract_ocr import ocr_image
 from src.utils.pdf_loader import load_pdf_pages
 
 
+# -------------------------
+# LOGGING SETUP
+# -------------------------
+def create_log_file(pdf_path):
+    os.makedirs("logs", exist_ok=True)
+
+    file_name = os.path.basename(pdf_path).replace(".pdf", "")
+    log_path = f"logs/log_{file_name}.txt"
+
+    log_file = open(log_path, "w", encoding="utf-8")
+
+    log_file.write("====================================\n")
+    log_file.write(f"PIPELINE LOG\n")
+    log_file.write(f"FILE: {file_name}\n")
+    log_file.write(f"TIME: {datetime.now()}\n")
+    log_file.write("====================================\n\n")
+
+    return log_file
+
+
+# -------------------------
+# PIPELINE
+# -------------------------
 def run_pipeline(pdf_path):
 
     print("\n🚀 Starting Pipeline...")
     print(f"📄 PDF: {pdf_path}\n")
+
+    log_file = create_log_file(pdf_path)
 
     pages = load_pdf_pages(pdf_path)
 
     print(f"📑 Total Pages Found: {len(pages)}\n")
 
     final_output = []
-    logs = []
 
     for i, page_image in enumerate(pages):
 
@@ -23,6 +50,8 @@ def run_pipeline(pdf_path):
         print(f"📄 Processing Page {page_number}")
         print(f"==============================")
 
+        log_file.write(f"\n--- PAGE {page_number} ---\n")
+
         # -------------------------
         # STEP 1: OCR
         # -------------------------
@@ -31,11 +60,11 @@ def run_pipeline(pdf_path):
         extracted_text = ocr_image(page_image)
 
         text_length = len(extracted_text.strip())
+        text_coverage = text_length / 2000
 
         print(f"📝 OCR Text Length: {text_length}")
 
-        # simple heuristic for now
-        text_coverage = text_length / 2000
+        log_file.write(f"OCR_TEXT_LENGTH: {text_length}\n")
 
         # -------------------------
         # STEP 2: TRIAGE
@@ -54,33 +83,44 @@ def run_pipeline(pdf_path):
         print(f"🏷️ Page Type: {page_type}")
         print(f"🎯 Confidence: {confidence:.2f}")
 
+        log_file.write(f"PAGE_TYPE: {page_type}\n")
+        log_file.write(f"CONFIDENCE: {confidence:.4f}\n")
+
         # -------------------------
         # STEP 3: ROUTING
         # -------------------------
         print("📦 Routing Page...")
 
         if page_type == "BLUE_SLIP":
-            print("🟦 BLUE SLIP detected (placeholder handling)")
+            print("🟦 BLUE SLIP detected")
 
             content = {
                 "note": "BLUE_SLIP detected",
                 "text": extracted_text
             }
 
+            log_file.write("ROUTE: BLUE_SLIP\n")
+
         elif page_type == "DIGITAL":
-            print("🟩 DIGITAL page → using OCR text")
+            print("🟩 DIGITAL page → OCR text")
 
             content = extracted_text
+
+            log_file.write("ROUTE: DIGITAL\n")
 
         elif page_type == "SCANNED":
-            print("🟨 SCANNED page → using OCR (VLM not added yet)")
+            print("🟨 SCANNED page → OCR (VLM later)")
 
             content = extracted_text
+
+            log_file.write("ROUTE: SCANNED\n")
 
         else:
-            print("⚠️ Unknown type → defaulting to OCR text")
+            print("⚠️ Unknown type → fallback OCR")
 
             content = extracted_text
+
+            log_file.write("ROUTE: UNKNOWN\n")
 
         final_output.append({
             "page_number": page_number,
@@ -88,32 +128,26 @@ def run_pipeline(pdf_path):
             "content": content
         })
 
-        # -------------------------
-        # STEP 4: LOGGING
-        # -------------------------
-        log_entry = {
-            "page_number": page_number,
-            "page_type": page_type,
-            "confidence": confidence,
-            "text_length": text_length
-        }
+        log_file.write(f"TEXT_LENGTH: {text_length}\n")
+        log_file.write("------------------------------------\n")
 
-        logs.append(log_entry)
+        print("📊 Log written")
 
-        print("📊 Log stored")
+    log_file.write("\n====================================\n")
+    log_file.write("PIPELINE COMPLETED\n")
+    log_file.close()
 
     print("\n✅ Pipeline Completed Successfully\n")
 
     return {
-        "pages": final_output,
-        "logs": logs
     }
-    
+
+
+# -------------------------
+# ENTRY POINT
+# -------------------------
 if __name__ == "__main__":
 
-    pdf_path = "data/samples/dummy/2024LHC4594 (3).pdf"
+    pdf_path = "data/samples/dummy/2025LHC495.pdf"
 
     result = run_pipeline(pdf_path)
-
-    print("\n📦 FINAL OUTPUT")
-    print(result)
