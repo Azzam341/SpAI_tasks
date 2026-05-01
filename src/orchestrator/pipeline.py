@@ -196,7 +196,7 @@ def run_pipeline(pdf_path):
     log_file.close()
 
     print("\n Pipeline Completed Successfully\n")
-
+    print("The logs are saved in SpAI_tasks/logs/")
     return {
         "pages": final_output,
         "metadata": metadata
@@ -204,22 +204,26 @@ def run_pipeline(pdf_path):
 
 
 # ENTRY POINT
-
+#I have made a little file browser to ease selection of files
 if __name__ == "__main__":
 
     from tkinter import Tk
     from tkinter.filedialog import askopenfilename
 
-    # hide root window
-    Tk().withdraw()
+    try:
+        # hide root window
+        Tk().withdraw()
 
-    # open file browser
-    pdf_path = askopenfilename(
-        title="Select PDF file",
-        filetypes=[("PDF Files", "*.pdf")]
-    )
+        # open file browser
+        pdf_path = askopenfilename(
+            title="Select PDF file",
+            filetypes=[("PDF Files", "*.pdf")]
+        )
 
-    if pdf_path:
-        result = run_pipeline(pdf_path)
-    else:
-        print("No file selected.")
+        if pdf_path:
+            result = run_pipeline(pdf_path)
+        else:
+            print("No file selected.")
+
+    finally:
+        input("\nPress Enter to exit...")
