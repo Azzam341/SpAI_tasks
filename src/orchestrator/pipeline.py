@@ -4,7 +4,7 @@ from datetime import datetime
 from src.agents.triage_agent import classify_page
 from src.ocr.tesseract_ocr import ocr_image
 from src.utils.pdf_loader import load_pdf_pages
-from src.vlm.gemini_vlm_v2 import run_vlm
+from src.orchestrator.blue_slip_methods import build_blue_slip_metadata
 
 from dotenv import load_dotenv, find_dotenv
 
@@ -18,9 +18,8 @@ else:
     print("API Key not found. Check your .env file and variable name.")
 
 
-# -------------------------
 # LOGGING SETUP
-# -------------------------
+
 def create_log_file(pdf_path):
     os.makedirs("logs", exist_ok=True)
 
@@ -38,42 +37,12 @@ def create_log_file(pdf_path):
     return log_file
 
 
-def write_page_block(log_file, page_number, page_type, confidence,
-                     text_length, extracted_text, final_output, route):
-
-    log_file.write(f"\n--- PAGE {page_number} ---\n")
-    log_file.write(f"PAGE_TYPE: {page_type}\n")
-    log_file.write(f"CONFIDENCE: {confidence:.4f}\n")
-    log_file.write(f"OCR_TEXT_LENGTH: {text_length}\n")
-    log_file.write(f"ROUTE: {route}\n")
-
-    log_file.write("\n----- EXTRACTED TEXT START -----\n")
-    log_file.write(extracted_text if extracted_text else "[EMPTY TEXT]")
-    log_file.write("\n----- EXTRACTED TEXT END -----\n")
-
-    log_file.write("\n----- FINAL OUTPUT START -----\n")
-
-    page_output = next(
-        (p for p in final_output if p["page_number"] == page_number),
-        None
-    )
-
-    if page_output:
-        log_file.write(str(page_output["content"]))
-    else:
-        log_file.write("[NO OUTPUT FOUND]")
-
-    log_file.write("\n----- FINAL OUTPUT END -----\n")
-    log_file.write("------------------------------------\n")
-
-
-# -------------------------
 # PIPELINE
-# -------------------------
+
 def run_pipeline(pdf_path):
 
     print("\nStarting Pipeline...")
-    print(f"📄 PDF: {pdf_path}\n")
+    print(f" PDF: {pdf_path}\n")
 
     log_file = create_log_file(pdf_path)
 
@@ -83,6 +52,30 @@ def run_pipeline(pdf_path):
 
     final_output = []
 
+
+    # METADATA
+    
+    metadata = {
+        "case_number": None,
+        "decision_date": None,
+        "has_blue_slip": False,
+        "page_offset": 0
+    }
+
+    # BLUE SLIP CHECK (PAGE 1 ONLY)
+
+    first_page_text = ocr_image(pages[0])
+
+    blue_slip_meta = build_blue_slip_metadata(first_page_text)
+    metadata.update(blue_slip_meta)
+
+    if metadata["has_blue_slip"]:
+        metadata["page_offset"] = 1
+        print("\n BLUE SLIP DETECTED (GLOBAL METADATA SET)")
+        print(metadata)
+
+    # PAGE LOOP
+
     for i, page_image in enumerate(pages):
 
         page_number = i + 1
@@ -91,9 +84,8 @@ def run_pipeline(pdf_path):
         print(f"Processing Page {page_number}")
         print("==============================")
 
-        # -------------------------
         # STEP 1: OCR
-        # -------------------------
+
         print("🔍 Running OCR...")
 
         extracted_text = ocr_image(page_image)
@@ -102,9 +94,8 @@ def run_pipeline(pdf_path):
 
         print(f"OCR Text Length: {text_length}")
 
-        # -------------------------
         # STEP 2: TRIAGE
-        # -------------------------
+
         print("Running Triage Agent...")
 
         result = classify_page(
@@ -119,15 +110,14 @@ def run_pipeline(pdf_path):
         print(f"Page Type: {page_type}")
         print(f"Confidence: {confidence:.2f}")
 
-        # -------------------------
         # STEP 3: ROUTING
-        # -------------------------
+        
         print("Routing Page...")
 
-        extraction_path = ""
+        route = ""
 
         if page_type == "BLUE_SLIP":
-            print("🟦 BLUE SLIP detected")
+            print("BLUE SLIP page (ignored in content output)")
 
             content = {
                 "note": "BLUE_SLIP detected",
@@ -142,17 +132,25 @@ def run_pipeline(pdf_path):
             route = "DIGITAL"
 
         elif page_type == "SCANNED":
-            print("SCANNED page → VLM")
+            print("SCANNED page → VLM (disabled for now)")
+            
+            # PLEASE READ THIS!
+            
             #If you decide to send request to vlm, this is the logic although free credits will run out after 20 tries
-            #vlm_result = run_vlm(page_image)
+            #Also note i am having quite some issues with gemini. It works on some, and completely falls flat on other files
+            #Will try open router instead
+            
+            # vlm_result = run_vlm(page_image)
 
-            #if isinstance(vlm_result, dict) and "error" in vlm_result:
-            #    print("⚠️ VLM failed → fallback to OCR")
-            #    content = extracted_text
-            #    route = "SCANNED_FALLBACK_OCR"
-            #else:
-            #    content = vlm_result
-            #    route = "SCANNED_VLM"
+            # if isinstance(vlm_result, dict) and "error" in vlm_result:
+            #     content = extracted_text
+            #     route = "SCANNED_FALLBACK_OCR"
+            # else:
+            #     content = vlm_result
+            #     route = "SCANNED_VLM"
+
+            content = extracted_text
+            route = "SCANNED_OCR_ONLY"
 
         else:
             print("Unknown type → fallback OCR")
@@ -160,50 +158,68 @@ def run_pipeline(pdf_path):
             content = extracted_text
             route = "UNKNOWN"
 
-        # -------------------------
+
         # STORE OUTPUT
-        # -------------------------
+    
+        
         final_output.append({
             "page_number": page_number,
             "page_type": page_type,
             "content": content
         })
 
-        # -------------------------
-        # PAGE LOG BLOCK (FULL DEBUG)
-        # -------------------------
-        write_page_block(
-            log_file=log_file,
-            page_number=page_number,
-            page_type=page_type,
-            confidence=confidence,
-            text_length=text_length,
-            extracted_text=extracted_text,
-            final_output=final_output,
-            route=route
-        )
+        # LOGGING
+
+        log_file.write("\n====================================\n")
+        log_file.write(f"PAGE {page_number} SUMMARY\n")
+        log_file.write("====================================\n")
+        log_file.write("| page_number | page_type | classified_by | confidence |\n")
+        log_file.write("|-------------|-----------|---------------|------------|\n")
+        log_file.write(f"| {page_number} | {page_type} | TRIAGE_AGENT | {confidence:.4f} |\n")
+        log_file.write("====================================\n")
+        
+
+        #log_file.write("\n----- EXTRACTED TEXT START -----\n")
+        #log_file.write(extracted_text)
+        #log_file.write("\n----- EXTRACTED TEXT END -----\n")
+
+        log_file.write("------------------------------------\n")
 
         print("Log written")
 
-    # -------------------------
-    # END LOG
-    # -------------------------
+    # FINAL OUTPUT
+    
     log_file.write("\n====================================\n")
     log_file.write("PIPELINE COMPLETED\n")
+    log_file.write(f"METADATA:\n{metadata}\n")
+
     log_file.close()
 
-    print("\n✅ Pipeline Completed Successfully\n")
+    print("\n Pipeline Completed Successfully\n")
 
     return {
-        "pages": final_output
+        "pages": final_output,
+        "metadata": metadata
     }
 
 
-# -------------------------
 # ENTRY POINT
-# -------------------------
+
 if __name__ == "__main__":
 
-    pdf_path = "data/samples/2014LHC4829.pdf"
+    from tkinter import Tk
+    from tkinter.filedialog import askopenfilename
 
-    result = run_pipeline(pdf_path)
+    # hide root window
+    Tk().withdraw()
+
+    # open file browser
+    pdf_path = askopenfilename(
+        title="Select PDF file",
+        filetypes=[("PDF Files", "*.pdf")]
+    )
+
+    if pdf_path:
+        result = run_pipeline(pdf_path)
+    else:
+        print("No file selected.")
