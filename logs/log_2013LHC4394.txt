@@ -1,0 +1,699 @@
+====================================
+PIPELINE LOG
+FILE: 2013LHC4394
+TIME: 2026-05-01 15:00:35.548380
+====================================
+
+
+--- PAGE 1 ---
+OCR_TEXT_LENGTH: 1189
+PAGE_TYPE: SCANNED
+CONFIDENCE: 0.8000
+ROUTE: SCANNED_VLM
+
+===== FINAL OUTPUT =====
+PAGE: 1
+TYPE: SCANNED
+OUTPUT_TEXT_START
+Here is all the readable text from the document page:
+
+113
+H.JD/C-41
+BLUE SLIP
+(Revised: under Act No. II of 1990)
+
+ORDER OF THE COURT.
+
+In the Court/Tribunal:
+Case No.W.P. 6417-09
+Title Muhammad Ashfaq vs. SDEO
+Decided on: 10-12-13
+
+(a) Judgment approved for reporting.
+(b) Registrar should see with reference to the work
+or conduct of some judicial officer.
+(c) If so, a separate confidential note should
+be sent to him in question.
+
+Yes/No.
+Yes/No.
+Yes/No.
+
+CERTIFICATE.
+Certified that the judgment/order is based upon or enunciates a
+principle of law/decides a question of law which is of first
+impression/distinguishes/over-rules/reverses/explains a previous
+decision.
+
+[Signature]
+Judge(s)/Presiding Officer
+
+Strike out whichever is not applicable.
+
+Note:-
+(1) This slip is only to be used when some action is to be taken
+(2) If the slip is used, the Reader must attach it to the top of the
+first page of the judgment.
+(3) Reader must ask the Judge writing the Judgment whether the
+Judgment is approved for reporting.
+(4) Those directions which are not to be used should be deleted.
+
+[Stamp: To be used by L.R.]
+
+Judgment Upload on Website. [Checkbox]
+Entry in Database [Checkbox]
+
+Name:
+Signature:
+Dated:
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 2 ---
+OCR_TEXT_LENGTH: 0
+PAGE_TYPE: SCANNED
+CONFIDENCE: 0.8000
+ROUTE: SCANNED_VLM
+
+===== FINAL OUTPUT =====
+PAGE: 2
+TYPE: SCANNED
+OUTPUT_TEXT_START
+This document page appears to be entirely blank, containing no readable text.
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 3 ---
+OCR_TEXT_LENGTH: 1347
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9020
+ROUTE: DIGITAL
+
+===== FINAL OUTPUT =====
+PAGE: 3
+TYPE: DIGITAL
+OUTPUT_TEXT_START
+“
+
+_
+—
+
+wT)
+
+|
+
+Stereo.H CJ DA 38.
+
+JUDGMENT SHEET
+IN THE LAHORE HIGH COURT
+MULTAN BENCH MULTAN.
+
+JU DICIAL DEPARTMENT
+
+Case No. W.P. 6417 of 2009
+Muhammad Ashfaq & 4 othrs Versus  Sub-Divisional Canal Officer, Senchanwala
+i Sub-Division & 15 others,
+
+ella
+
+uv
+
+JUDGMENT.
+Date of hearing} 10.12.2013
+Petitioners by :|, Ch. Sagheer Ahmad, Advocate
+
+Respondents No.3 tol6 by: Mian Muhammad Jamal, Advocate
+
+Khalid Mehmood Ziladar.
+
+| SHOAIB SAEED, J., This appeal
+
+Js, is
+directed against the impugned order dated
+21.07.2009 passed by Divisional Canal Officer
+respondent No.2.
+
+2. | Brief facts of the case are that an application
+under section 68 of the Canal and Drainage, Act
+No. VIII of 1873 read with Punjab Amendment Act
+1975. for sanction of canal water from outlet
+No. 22010 /R-I Rajbah 1-L/6-R Chak No.52/WB
+Tehsil and District Vehari was filed by the
+petitioners with respondent No.1. Petitioners
+purchased 42.33 acre agriculture land where-after
+application for sanction of canal water was moved. It
+was | mentioned in the application that the area is
+included in CCA (Cultivable Command Area) so
+under section 68 of the Canal & Drainage Act No.
+VU of 1873 read with Punjab Amendment Act 1975
+the said area is required to be included in the
+
+Warabandi.
+
+3. 3 Respondent No.1 marked the application to
+
+concerned Ziladar who after spot me,
+
+
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 4 ---
+OCR_TEXT_LENGTH: 0
+PAGE_TYPE: SCANNED
+CONFIDENCE: 0.8000
+ROUTE: SCANNED_VLM
+
+===== FINAL OUTPUT =====
+PAGE: 4
+TYPE: SCANNED
+OUTPUT_TEXT_START
+Upon close inspection, the document page is almost entirely blank. However, in the top right corner, there are extremely faint marks that might be interpreted as text.
+
+The most discernible mark appears to be a faint, small number '5'. Next to it, there is an even fainter, smaller mark that could be a comma or a dash. Further to the right, there's a tiny, almost imperceptible dot.
+
+Due to the extreme faintness and poor quality, confidence in these characters is very low. However, if any text is present, it is:
+
+5
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 5 ---
+OCR_TEXT_LENGTH: 1644
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9466
+ROUTE: DIGITAL
+
+===== FINAL OUTPUT =====
+PAGE: 5
+TYPE: DIGITAL
+OUTPUT_TEXT_START
+W.P. No.6417 of 2009
+
+submitted his report that on this CCA Mogha has
+capacity of 753 acres and Warabandi is on 699.88
+acre of land, it still has capacity of 53 acres of canal
+water. Respondent No.1 after hearing the parties
+/share-holders and in the light of report by Ziladar
+and examination of record sanctioned canal water to
+the petitioners and ordered for its inclusion in
+Warabandi. Warabandi was accordingly amended
+and’ names of the petitioners after inclusion are
+
+i
+mentioned at serial No.18 of the Warabandi in
+
+relevant Rajbah.
+
+4, Against order passed by respondent No.1,
+appeal was filed with respondent No.2 which was
+accepted and order passed by respondent No.1 was
+set aside
+
+5, Learned counsel for the petitioners contends
+that the appeal was patently barred by time; that
+under section 68(3) of the Act ibid any person
+aggrieved under subsection(2) may within 15 days of
+passing of such order can file an appeal with
+Divisional Canal Officer. Application under section
+5 of the Limitation Act was also filed along with the
+said appeal. Respondent No.1 passed order on
+29/10.2008, the order was assailed on 18.06.2009.
+Respondent No.2 in his order did not touch the point
+of limitation. It was averred that where limitation is
+provided in the statute itself section 5 of the
+
+Limitation Act is not applicable. Reliance was placed
+
+‘on Muhammad Bashir and another versus Province
+
+of Punjab through Collectorof District Gujrat _and
+
+others (PLJ 2003 SC 403), Allah Dino and another
+{
+
+versus Muhammad: Shah and others (2001 SCMR
+
+286), Mughla_ and others versus Jaffar_and_others
+
+(2001 CLC 1410(Lahore) and Central Board o Al
+
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 6 ---
+OCR_TEXT_LENGTH: 0
+PAGE_TYPE: SCANNED
+CONFIDENCE: 0.8000
+ROUTE: SCANNED_VLM
+
+===== FINAL OUTPUT =====
+PAGE: 6
+TYPE: SCANNED
+OUTPUT_TEXT_START
+I'm sorry, but I was unable to find any readable text in the document. The image appears to be a blank white page with some very faint, small specks in the top right corner that are not discernible as text.
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 7 ---
+OCR_TEXT_LENGTH: 1716
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+
+===== FINAL OUTPUT =====
+PAGE: 7
+TYPE: DIGITAL
+OUTPUT_TEXT_START
+- No.6417 of 2009
+EE NO.0417 Of 2009,
+
+3 4)
+Revenue, Islamabad through Collector of Customs
+
+Sialkot Dry Port Samberial, District Sialkot and
+EM,
+
+others versus Messrs Raja_Industries (Pvt) Ltd.
+
+through General Manager and 3 others (1998
+
+SCMR 307). That even otherwise respondent No.2
+
+had no jurisdiction to condone delay under section 5
+
+of the Act ibid. Reliance was placed on Ahmad Khan
+
+Vs. Kausar Parveen (2009 CLC 759); that the appeal
+was patently barred by time,
+
+6. ; Petitioners after amendment of Warabandi
+started irrigating their land. It was pointed out that
+appeal was filed on 18.06.2009, whereas note on said
+page of the appeal evidences to the fact that status
+quo granted and the date below mentioned is
+17.06.2009. Canal water was Sanctioned in favour of
+the petitioners but in the memorandum of appeal
+only petitioners No.1 to 3 have been impleaded as
+party whereas petitioners No.4 and 5 have been left
+Out, this material aspect while deciding the appeal
+was, ignored by respondent No.2. Petitioners
+purchased their land and share of each petitioner is
+mentioned in Register Haqdaran-e-Zamin, therefore,
+canal water was accordingly sanctioned Separately
+by ‘respondent No.l. Single appeal without
+impleading petitioners No. 4 & 5was not competent,
+the order passed by respondent No. | was set aside
+completely, which was unwarranted in law. It was
+contended that respondent No.2 in impugned order
+reasoned that the land was allotted under the
+Tube-Well Sinking Scheme, so without obtaining
+NOC from the District Collector no canal water
+could be sanctioned, this was factually incorrect as
+land was not the ownership of the Provincial
+
+Government but
+
+petitioners are vendees/purchasers. Y/,
+
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 8 ---
+OCR_TEXT_LENGTH: 0
+PAGE_TYPE: SCANNED
+CONFIDENCE: 0.8000
+ROUTE: SCANNED_VLM
+
+===== FINAL OUTPUT =====
+PAGE: 8
+TYPE: SCANNED
+OUTPUT_TEXT_START
+After analyzing the provided image and all the crops, it appears that there is no readable text on this document page. The page is largely blank with only faint noise visible, but no discernible characters or words.
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 9 ---
+OCR_TEXT_LENGTH: 1750
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+
+===== FINAL OUTPUT =====
+PAGE: 9
+TYPE: DIGITAL
+OUTPUT_TEXT_START
+2N.P.No.6417 of 2009
+
+Right of Ownership even under section 30 of the
+Colonization of Government Land Act 1912, stands
+transferred in favour of the petitioners. Thus there
+was no: need to obtain NOC before filing application
+for sanction of canal water. There’ is no bar for
+Sanction of canal water in favour of the vendees who
+purchased property after grant of proprietary rights
+from original allottees. Respondent No.2 erred in law
+by giving such a finding. Moreover, quite a few
+persons” enjoying the same status have been
+sanctioned canal water. According to KHAKA
+DASTI watercourse which irrigates land of different
+owners | included in C.C.A including that of the
+respondents passes through the land of petitioners
+and the sanctioned NAKKA is also situated in the
+land of the petitioners. Report by Ziladar that
+petitioners heve no other source of irrigation is also
+material. This important aspect was not examined by
+respondent No.2. The order passed by respondent
+No.2 is patently unlawful and unwarranted in law.
+
+7 Conversely, it was argued that writ is not
+competent as questions of fact are involved which
+require evidence on the point in issue, petitioners
+should file a civil suit. In petitioners case section 68
+of the Act ibid is not applicable, petitioners should
+have moved their application under section 20 of the
+said Act to respondent No.2. Section 68 is attracted
+between shareholders, whereas petitioners are neither
+shareholders nor recipients for not being owners in
+land but as they were in need of water under such
+circumstances application lay under section 20 of the
+Act ibid * ;to respondent No.2 who after hearing the
+parties and examination of record makes proposals
+
+and sends to Superintending Canal Officer whose
+
+
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 10 ---
+OCR_TEXT_LENGTH: 0
+PAGE_TYPE: SCANNED
+CONFIDENCE: 0.8000
+ROUTE: SCANNED_VLM
+
+===== FINAL OUTPUT =====
+PAGE: 10
+TYPE: SCANNED
+OUTPUT_TEXT_START
+I have carefully examined the provided image and its various crops. There is no readable text present in the document. The page appears to be blank.
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 11 ---
+OCR_TEXT_LENGTH: 1742
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+
+===== FINAL OUTPUT =====
+PAGE: 11
+TYPE: DIGITAL
+OUTPUT_TEXT_START
+a
+
+W.P. No.6417 of 2009
+
+ia
+
+decision is binding on all effectees caused by the said
+change. The land Was allotted under Tube-Well
+Sinking Scheme, obtaining NOC from District
+Collector was mandatory. As js evident from
+History-sheet Moga, land is shown not cultivable in
+column Ne.7 (ghair mumkin), warabandi was not
+implemented. Rule 82 of the Rules under the Canal
+And Drainage Act, 1873 Provide a period of thirty
+days for presenting an appeal, in its explanation it is
+provided that appeal may be admitted, even after the
+Prescribed period if the appellant satisfies the court
+that hejhad fresh cause in respect of filing of appeal
+within the given period, therefore, the appeal filed
+was competent which was filed Strictly within the
+meaning of section 84 of the Rules ibid. Respondent
+No.2 had powers to summarily reject the appeal if
+found unnecessary under section 85 of the Rules ibid.
+Reliance was Placed on Munshi versus Ali
+
+Muhammad (1980 CLC 234), Muhammad Naseem
+sautiammaa Naseem
+
+Khan and another versus Govt. of NW EF P. through
+
+Secretary, Department o0 Cooperative Peshawar &
+24 others (1990 CLC 1693(Peshawar), Muhammad
+Idrees and others versus Superintending Engineer
+and others(1996 CLC 1747), wherein distinction
+
+was drawn in respect of section 68 and section 20 of
+
+the Act ibid. Order passed by respondent No.2 is
+with jurisdiction and in accordance with law,
+
+8. Arguments heard and available record perused,
+9. From record it is evident that petitioners are
+vendees/purchasers. Watercourse irrigating land of
+different owners, included in CCA, passes through
+the land 6f the petitioners and sanctioned NAKKA js
+also situated in their land. The land was not allotted
+
+under Tube-Well Sinking Scheme as contended by
+
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 12 ---
+OCR_TEXT_LENGTH: 0
+PAGE_TYPE: SCANNED
+CONFIDENCE: 0.8000
+ROUTE: SCANNED_VLM
+
+===== FINAL OUTPUT =====
+PAGE: 12
+TYPE: SCANNED
+OUTPUT_TEXT_START
+The document page is almost entirely blank. In the top right corner, there is a very faint, small, and partially visible number:
+
+3
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 13 ---
+OCR_TEXT_LENGTH: 1745
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9500
+ROUTE: DIGITAL
+
+===== FINAL OUTPUT =====
+PAGE: 13
+TYPE: DIGITAL
+OUTPUT_TEXT_START
+rs
+
+&
+
+W.P. No.6417 of 2009
+
+the teamed counsel for the respondents, it was
+purchased by the petitioners, thus there was no need
+to obtain NOC from District Collector. The right of
+ownership under section 30 of Colonization of
+Government Land Act, 1912 stood transferred in
+favour of the petitioners. Report of Ziladar is
+significant as it mentions that CCA Moga has
+capacity of 753 acres whereas warabandi is to the
+extent of 569.88 acres of land only and it still has
+capacity to feed canal water to 53 acres of land.
+Since petitioners purchased 42.33 acres agricultural
+land, keering in view the capacity of C.C.A. Moga
+petitioners’ land could easily be accommodated.
+
+10. | Section 20 is attracted when a person not
+already enjoying water supply requires canal water
+for his land and such supply is to be conveyed
+through «lready existing watercourse, or when any
+person obtained land in which water is not
+previously sanctioned and he wants to get it included
+in the warabandi of any outlet. But if land already
+stands included in the Chakbandi and CCA of any
+outlet the owner of such land can get his land
+included in the warabandi under section 68. Because
+the water of such land is already flowing in the
+watercourse, therefore, section20 is attracted only for
+a fresh supply for any other land which is not already
+in C.C.A.. or is not in Chakbandi of such outlet.
+
+LL. Section 20 further applies when site of any
+outlet is required to be changed, perhaps comes in
+the purview of words, “change of source of
+irrigation”. If site of outlet is changed under section
+20) distribution of water among the shareholders of
+such changed outlet will be done under section 68.
+
+The original jurisdiction entertaining any application
+
+ti
+
+o
+
+S
+
+rj
+
+
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 14 ---
+OCR_TEXT_LENGTH: 0
+PAGE_TYPE: SCANNED
+CONFIDENCE: 0.8000
+ROUTE: SCANNED_VLM
+
+===== FINAL OUTPUT =====
+PAGE: 14
+TYPE: SCANNED
+OUTPUT_TEXT_START
+After analyzing the image and the provided crops, the only readable text found on the page is:
+"3 1"
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 15 ---
+OCR_TEXT_LENGTH: 1651
+PAGE_TYPE: DIGITAL
+CONFIDENCE: 0.9476
+ROUTE: DIGITAL
+
+===== FINAL OUTPUT =====
+PAGE: 15
+TYPE: DIGITAL
+OUTPUT_TEXT_START
+W.P. No.6417 of 2009
+
+oe) \
+
+i] \2
+
+under section 68 lies with SDCO and Divisional
+Canal Officer possess the appellate power. The order
+of SDCO and DCO under section 68 is challengeable
+in the Civil Court if these are against provisions of
+section 68 or some other irregularities pertaining to
+jurisdiction appear therein. No such discrepancy is
+found in the present case. Petitioners land being
+aivsaty included in the Chakbandi and CCA, water
+of such land was already flowing in the watercourse,
+therefore, the application was rightly filed under
+section 68 of the Act ibid.
+
+3) Ziladar present in court along with relevant
+at produced copies of extract Fard and also
+admitted the fact that petitioners land fall in CCA
+and they were owners of the property.
+
+13, There is no denying the fact that the order was
+passed by respondent No.1 on 29.10.2008 which was
+assailed by the respondents on 18.06.2009.
+Respondent No.2 in his order failed to address the
+basic question raised by the petitioners with regard to
+question of limitation. The appeal filed before
+respondent No.2 was patently barred by time. Even
+under Rule 82 of the Rules under Canal & Drainage
+Act, 1873, it is expressly provided that any appeal
+admitted after prescribed period of thirty days as
+given in the said rule, appellant has to satisfy the
+Court that he had sufficient cause for not presenting
+the appeal within such period. Respondent No.2 in
+bis order deed 21.07.2009 failed to address this
+basic question of law.
+
+The judgments cited by learned counsel for the
+respondents are distinguishable on law and facts and
+
+as such are not attracted to the facts of this case. 7.5
+
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 16 ---
+OCR_TEXT_LENGTH: 0
+PAGE_TYPE: SCANNED
+CONFIDENCE: 0.8000
+ROUTE: SCANNED_VLM
+
+===== FINAL OUTPUT =====
+PAGE: 16
+TYPE: SCANNED
+OUTPUT_TEXT_START
+The document page contains very faint text in the top right corner:
+
+> 4
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 17 ---
+OCR_TEXT_LENGTH: 237
+PAGE_TYPE: SCANNED
+CONFIDENCE: 0.8000
+ROUTE: SCANNED_FALLBACK_OCR
+
+===== FINAL OUTPUT =====
+PAGE: 17
+TYPE: SCANNED
+OUTPUT_TEXT_START
+a
+Q
+W.P. No.6417 of 2009 8 1)
+
+14. In view of above, the order dated 21.07.2009
+itp passed by respondent No.2 is set aside and the writ
+
+petition in hand is allowed.
+
+(SHOAIB SAEED)
+JUDGE
+Approved for Reporting .
+
+{
+Judge}
+G.M.Bhatti/* }
+
+
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+--- PAGE 18 ---
+OCR_TEXT_LENGTH: 0
+PAGE_TYPE: SCANNED
+CONFIDENCE: 0.8000
+ROUTE: SCANNED_FALLBACK_OCR
+
+===== FINAL OUTPUT =====
+PAGE: 18
+TYPE: SCANNED
+OUTPUT_TEXT_START
+
+OUTPUT_TEXT_END
+===== END PAGE =====
+
+
+====================================
+PIPELINE COMPLETED

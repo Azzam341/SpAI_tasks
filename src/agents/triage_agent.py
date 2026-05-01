@@ -14,6 +14,7 @@ def classify_page(page_number: int,
             return {
                 "page_type": "BLUE_SLIP",
                 "confidence": 0.99,
+                "extraction_path": "ocr",
                 "reason": "Blue Slip detected on page 1"
             }
 
@@ -24,8 +25,7 @@ def classify_page(page_number: int,
         return {
             "page_type": "DIGITAL",
             "confidence": min(0.95, 0.7 + text_coverage * 0.3),
-            # 0.7 is selected as a baseline, we give it a small bonus to smoothly boost/decrease confidence, capped at 0.95 to prevent
-            #over-confident decisions
+            "extraction_path": "ocr",
             "reason": "Text coverage above threshold"
         }
 
@@ -35,5 +35,6 @@ def classify_page(page_number: int,
     return {
         "page_type": "SCANNED",
         "confidence": 0.8,
+        "extraction_path": "vlm",
         "reason": "Low text coverage, treated as image-based page"
     }
